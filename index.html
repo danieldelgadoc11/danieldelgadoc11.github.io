@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="eS">
+    <head>
+    <title>Inicio</title>
+    <meta carset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+        <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+     
+    <script>
+        $(window).load( function(){
+            jQuery('#camera_wrap_1').camera({
+                height: '73,00%',
+                // thumbnails: true,
+                playPause: false,
+                time: 8000,
+                transPeriod: 900,
+                fx: 'simpleFade',
+                loader: 'none',
+                minHeight:'200px',
+                navigation: false
+            });
+            
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            
+            $('#foo').carouFredSel({
+                auto: false,
+                responsive: true,
+                width: '100%',
+                prev: '#prev1',
+                next: '#next1',
+                scroll: 1,
+                items: {
+                    height: 'auto',
+                    width: 300,
+                    visible: {
+                        min: 1,
+                        max: 1
+                    }
+                },
+                mousewheel: false,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
+        });
+    </script>
+
+     
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+     </head>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="container_16">
+        <div class="row">
+            <div class="grid_16">
+                <h1><a href="index.html"><img src="images/logo.png" alt="agro united"></a> </h1>
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="index.html">Nosotros</a>
+                            <ul>
+                                <li><a href="#">Historia</a></li>
+                                <li><a href="#">Noticias</a></li>
+                                <li><a href="#">Productos</a>
+                                    <ul>
+                                        <li><a href="#">Frescos</a></li>
+                                        <li><a href="#">Conservas</a></li>
+                                    </ul>
+                                </li>
+                           </ul>
+                        </li>
+                        <li><a href="index-1.html">Servicios</a></li>
+                        <li><a href="index-2.html">Productos</a></li>
+                        <li><a href="index-3.html">Aliados</a></li>
+                        <li class="last"><a href="index-4.html">Contactenos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="bg-1">
+        <div class="bg-2">
+            <div class="container_16">
+                <div class="row">
+                    <div class="grid_16 slider clearfix">
+                        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                            <div data-src="images/slide-1.jpg">
+                                <div class="camera_caption fadeIn">
+                                    <div class="slider-t-1">100%</div>
+                                    <div class="slider-t-2">Natural y Organico</div>
+                                </div>
+                            </div>
+                            <div data-src="images/slide-2.jpg">
+                                <div class="camera_caption fadeIn">
+                                    <div class="slider-t-1">Solo</div>
+                                    <div class="slider-t-2">Productos Premium</div>
+                                </div>
+                            </div>
+                            <div data-src="images/slide-3.jpg">
+                                <div class="camera_caption fadeIn">
+                                    <div class="slider-t-1">Control</div>
+                                    <div class="slider-t-2">de Calidad</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="shadow"></div>
+                <div class="row">
+                    <div class="grid_16"><div class="title-1">Bienvenidos a HORTALIZAPP, lo mejor del campo</div></div>
+                </div>
+                <div class="row">
+                    <div class="list_carousel responsive clearfix carousel-1">
+                        <ul id="foo" class="clearfix">
+                            <li class="grid_16">
+                                <div class="text-1">Nuestra iniciativa está enfocada en brindar una nueva manera de vender los productos que son sembrados por los campesinos y campesinas colombianos, a traves de esta `plataforma podremos mejorar juntos las condiciones de quienes lo entregan todo para entregarnos buenestar.</div>
+                            </li>
+                            <li class="grid_16">
+                                <div class="text-1">Juntos, podremos hacer que todo el esfuerzo y dedicación de quienes dedican su vida al campo, a brindarnos los alimentos que consumimos a diario sea recompensado y a su vez recibiras los mejores productos, de la tierra a su mesa a los mejores precios.</div>
+                            </li>
+                        </ul>
+                        <div class="arrows">               
+                            <a id="prev1" class="prev" href="#"></a>
+                            <a id="next1" class="next" href="#"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--=======content================================-->
+<div class="content">
+    <div class="bg-1">
+        <div class="container_16">
+            <div class="row row-1">
+                <div class="grid_4 prefix_1 bord-1 btn-wrapper">
+                    <div class="maxheight">
+                        <div class="aligncenter"><img src="images/page-1_img-1.png" alt=""></div>
+                        <h2>Quienes somos</h2>
+                        <h4>Conozca nuestra iniciativa</h4>
+                        <div>Este proyecto es viable gracias al apoyo del SENA y a el fondo emprender.</div>
+                        <a href="#" class="btn"><span>MÁS</span></a>
+                    </div>
+                </div>
+                <div class="grid_4 prefix_1 bord-1 btn-wrapper">
+                    <div class="maxheight">
+                        <div class="aligncenter"><img src="images/page-1_img-2.png" alt=""></div>
+                        <h2>eco soluciones</h2>
+                        <h4>Juntos hacia el futuro</h4>
+                        <div>La solucion al alcance de nuestras manos, tenemos un sistema que mejora los procesos.</div>
+                        <a href="#" class="btn"><span>MÁS</span></a>
+                    </div>
+                </div>
+                <div class="grid_4 prefix_1 btn-wrapper">
+                    <div class="maxheight">
+                        <div class="aligncenter"><img src="images/page-1_img-3.png" alt=""></div>
+                        <h2>VIDA ORGÁNICA</h2>
+                        <h4>Mejora tu salud, ¡es hora!</h4>
+                        <div>Los alimentos organicos, ademas de ser saludables ayudamos a evitar la contaminación.
+                        </div>
+                        <a href="#" class="btn"><span>MÁS</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_16">
+        <div class="row">
+            <div class="grid_5 suffix_1">
+                <h2>Nuestros Principios</h2>
+                <p>Nuestra misión es lograr hacer del oficio de la agricultura un negocio más rentable para los campesinos:</p>
+                <ul class="list-1">
+                    <li><a href="#">Servicio al cliente</a></li>
+                    <li><a href="#">Productos de calidad</a></li>
+                    <li><a href="#">Logística</a></li>
+                    <li><a href="#">Contoles</a></li>
+                    <li><a href="#">Etica</a></li>
+                    <li><a href="#">Competitividad</a></li>
+                    <li><a href="#">Variedad</a></li>
+                    <li><a href="#">Proceso</a></li>
+                    <li><a href="#">Respeto</a></li>
+                    <li><a href="#">Tecnología</a></li>
+                </ul>
+            </div>
+            <div class="grid_5 suffix_1">
+                <img src="images/page-1_img-4.jpg" alt="" class="wrapper p1">
+                <div class="title-2">tecnologia al servicio del campo colombiano</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus id voluptate esse architecto veniam, nemo quidem sequi cum. Pariatur architecto, qui, eius exercitationem Pariatur architecto.</div>
+                <a href="#" class="btn-2">leer más</a>
+            </div>
+            <div class="grid_4">
+                <h2>Servicios</h2>
+                <div class="num-lists">
+                    <div class="bord-2">
+                        <div class="color-1">1.
+                            <a href="#">Ventas Corporativas</a>
+                        </div>
+                        <div>Compre los mejores productos, directamente a los campesinos.</div>
+                    </div>
+                    <div class="bord-2">
+                        <div class="color-1">2.
+                            <a href="#">Productos procesados</a>
+                        </div>
+                        <div>Las mejores frutas, las mejores verduras, sin pesticidas.</div>
+                    </div>
+                    <div class="bord-2">
+                        <div class="color-1">3.
+                            <a href="#">Preventa Cosechas</a>
+                        </div>
+                        <div>Contactenos, reserve y reciba precios especiales.</div>
+                    </div>
+                </div>
+            <a href="#" class="btn-2">leer más</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=======footer=================================-->
+<footer>
+    <div class="bg-3">
+        <div class="container_16 bord-3">
+            <div class="row main-foot">
+                <div class="container_16">
+
+                    <div class="grid_6 bord-1 prefix_1">
+                        <div class="icon-1">Cl. 15 #31-42, Bogotá - Colombia<br>Teléfono: 310 287 2296</div>
+                    </div>
+                    <div class="grid_4 prefix_1"><div class="icon-2"><a href="#" class="color-2 h-underline">info@hortalizapp.com</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-4">
+        <div class="container_16">
+            <div class="row grid_16">
+                <div class="inside">
+                    <a href="index.html"><img src="images/logo-foot.png" alt=""></a>
+                    <span>&copy; 2023 &#8226; <a href="index-5.html" class="h-underline">Politica de privacidad</a></span>
+                    <!--{%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
